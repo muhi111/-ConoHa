@@ -1,30 +1,18 @@
-# React + TypeScript + Vite
+# 概要
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+このリポジトリは、GMO IG の5dayインターン(2024/08/05-2024/08/09)で作成したものです。<br/>
+「ConoHaのコンパネを改良する」というお題でハッカソン形式で開発しました。<br/>
+初心者にも優しいUI・UXをテーマに以下の機能を実装しました。
 
-Currently, two official plugins are available:
+- チャットによって利用場面に合わせたVPSプランを提案
+- 上記提案に基づいて実際にVPサーバーを作成
+- スマホ表示時に必要な情報のみを見やすいようにしたデザイン
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 表彰
+GMO IG 5daysインターン内のハッカソンで最優秀賞を受賞しました。
 
-## Expanding the ESLint configuration
+# 技術スタック
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- フロントエンド: Vite, React, TypeScript
+- バックエンド: Go, Gin
+- インフラ: ConoHa VPS
